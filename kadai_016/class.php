@@ -21,12 +21,8 @@
             }
 
             // メソッドを定義する
-            public function set_name(string $name) {
-                $this->name = $name;
-            }
-
-            public function get_price() {
-                return $this->price;
+            public function show_price() {
+                echo $this->price;
             }
         }
 
@@ -52,16 +48,8 @@
             }
 
             // メソッドを定義する
-            public function set_name(string $name) {
-                $this->name = $name;
-            }
-
             public function show_height() {
-                $this->height;
-            }
-
-            public function get_height() {
-                return $this->height;
+                echo $this->height;
             }
         }
 
@@ -73,8 +61,8 @@
         echo '<br>';
         
         // メソッドにアクセスして実行する
-        echo $potato->get_price() . '<br>';
-        echo $dog->get_height();
+        echo $potato->show_price() . '<br>';
+        echo $dog->show_height();
         ?>
     </p>
 </body>
